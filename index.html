@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin Sales & Services Company</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white text-center py-4">
+        <h1 class="text-3xl font-bold">Penguin Sales & Services Company</h1>
+        <p class="text-lg">We Make It Happen</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-500 text-white py-3">
+        <div class="container mx-auto flex justify-center space-x-4">
+            <a href="#" class="hover:underline">Home</a>
+            <a href="#" class="hover:underline">Bridal Car Services</a>
+            <a href="#" class="hover:underline">Towing Services 24/7</a>
+            <a href="#" class="hover:underline">Trucking Services</a>
+            <a href="#" class="hover:underline">Heavy Equipment Rental</a>
+            <a href="#" class="hover:underline">General Construction</a>
+            <a href="#" class="hover:underline">Furniture</a>
+            <a href="#" class="hover:underline">Auto Parts</a>
+            <a href="#" class="hover:underline">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Search Box -->
+    <div class="container mx-auto my-6 text-center">
+        <input type="text" id="search" placeholder="Search services..." onkeyup="filterServices()"
+               class="w-full max-w-lg px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300">
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4">
+        <div id="servicesList" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col service">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h2 class="text-xl font-semibold mb-2">Bridal Car Services</h2>
+                    <p>"Making memories one ride at a time."</p>
+                </div>
+                <img src = "https://i.pinimg.com/564x/1b/47/1c/1b471c6b2ad549f9f5381a459a8c2531.jpg">
+            </div>
+            <div class="col service">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h2 class="text-xl font-semibold mb-2">Towing Services 24/7</h2>
+                    <p>"Your reliable partner in towing solutions."</p>
+                </div>
+                <img src="https://i.pinimg.com/236x/a4/17/94/a417944401fc83f5ebc604d1795aa7ab.jpg">
+            </div>
+            <div class="col service">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h2 class="text-xl font-semibold mb-2">Trucking Services</h2>
+                    <p>"Transporting Your Business, Every Step of the Way."</p>
+                </div>
+                <img src="https://i.pinimg.com/236x/a3/ec/b9/a3ecb9d469dc3116f98b401ba713f4ce.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col service">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h2 class="text-xl font-semibold mb-2">Heavy Equipment Rental</h2>
+                    <p>"Boost Your Productivity, Rent Heavy Machinery for Agility."</p>
+            
+                </div>
+                <img src="https://i.pinimg.com/736x/5d/3d/9a/5d3d9ad476320c1c3e53537624b11fab.jpg">
+            </div>
+            <div class="col service">
+                <div class="bg-blue p-4 rounded-lg shadow">
+                    <h2 class="text-xl font-semibold mb-2">General Construction & Maintenance</h2>
+                    <p>"Got 99 problems, and ‘loose screws’ are definitely one of them."</p>
+                </div>
+                <img src="https://i.pinimg.com/236x/14/b9/67/14b96739c48aa11f55124a9b46f75da0.jpg">
+            </div>
+            <div class="col service">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h2 class="text-xl font-semibold mb-2">Furniture - Hotel & Residential</h2>
+                    <p>"Quality furniture for hotels and residential spaces, tailored to meet your aesthetic and functional needs."</p>
+                </div>
+                <img src="https://i.pinimg.com/236x/f9/28/fc/f928fcd62310de7f5af54a63e640f411.jpg">
+            </div>
+            <div class="col service">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h2 class="text-xl font-semibold mb-2">Auto Parts</h2>
+                    <p>"Wide range of auto parts to keep your vehicle in top condition."</p>
+
+                </div>
+                <img src="https://i.pinimg.com/236x/59/93/37/5993377dd085bb4c52bc7fb94c961175.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4 mt-8">
+        <p>© 2024 Penguin Sales & Services Company – All rights reserved</p>
+        <p>Powered by WP – Designed with the Customizr theme</p>
+    </footer>
